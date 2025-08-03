@@ -31,10 +31,6 @@ export const GlobalCss = createGlobalStyle`
 .centralizer {
     max-width: 102.4rem;
     width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     margin: 8rem auto 12rem;
 
     /* @media (max-width: ${breakpoints.desktop}) {

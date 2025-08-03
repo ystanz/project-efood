@@ -1,57 +1,24 @@
-import { colors } from '../../styles'
 import styled from 'styled-components'
+import { colors } from '../../styles'
 
 export const Section = styled.section`
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-items: center;
-  row-gap: 8rem;
-  column-gap: 4.8rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3.2rem;
+  margin: 5.6rem auto 12rem;
 `
 export const Article = styled.article`
-  max-width: 47.2rem;
+  max-width: 32rem;
   width: 100%;
-  max-height: 39.8rem;
-  height: 100%;
-  color: ${colors.darkPink};
-  position: relative;
+  padding: 0.8rem;
+  color: ${colors.lightPink};
+  background-color: ${colors.darkPink};
 
   figure {
-    max-width: 47.2rem;
     width: 100%;
 
     img {
       background-size: cover;
-    }
-  }
-
-  .content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 8px 8px;
-    border: 1px solid ${colors.darkPink};
-  }
-
-  .contentHeader {
-    display: flex;
-    justify-content: space-between;
-    font-weight: 700;
-    font-size: 1.8rem;
-
-    .rating {
-      display: flex;
-      justify-content: space-between;
-
-      p {
-        margin-right: 8px;
-      }
-
-      img {
-        max-width: 2.1rem;
-        width: 100%;
-        height: 2.1rem;
-      }
     }
   }
 
@@ -63,14 +30,16 @@ export const Article = styled.article`
   }
 
   .button {
-    width: 8.2rem;
+    width: 100%;
     height: 2.4rem;
-    background-color: ${colors.darkPink};
+    background-color: ${colors.lightPink};
+    color: ${colors.darkPink};
     cursor: pointer;
-    color: ${colors.backgroundColor};
     font-size: 1.4rem;
     font-weight: 700;
+    line-height: 100%;
     align-content: center;
     text-align: center;
+    display: block;
   }
 `
